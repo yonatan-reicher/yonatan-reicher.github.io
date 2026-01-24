@@ -101,8 +101,8 @@ textColumn =
         , myBullets
         , p [] [ text """
             I am a researcher at the software engineering lab at The Technion.
-            I am looking into super-optimization, into theorem proving, and into
-            how humans use these tool.
+            I am looking into super-optimization, theorem proving, and into
+            how humans use these tools.
             """ ]
         -- , h2 [] [ text "teaching" ]
         -- , p []
@@ -128,6 +128,7 @@ picture =
     img
         [ src "images/me.png"
         , style "width" "100%"
+        , style "border-radius" "5px"
         ] []
 
 
@@ -137,16 +138,19 @@ coolColumn =
         [ style "display" "inline-block"
         , style "width" "50%"
         , style "vertical-align" "top"
+        , style "padding-top" "90px"
         ]
         [ div
             [ style "margin" "0 100px"
             ]
-            [ h1
-                [ style "text-wrap" "nowrap"
-                ]
-                [ text "Jonathan Reicher"
-                ]
-            , picture
+            -- [ h1
+            --     [ style "text-wrap" "nowrap"
+            --     ]
+            --     [ text "Jonathan Reicher"
+            --     ]
+            -- , picture
+            -- ]
+            [ picture  -- just the picture for now
             ]
         ]
 

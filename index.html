@@ -5173,7 +5173,6 @@ var $author$project$Home$update = F2(
 		return _Utils_Tuple2(_Utils_Tuple0, $elm$core$Platform$Cmd$none);
 	});
 var $elm$html$Html$div = _VirtualDom_node('div');
-var $elm$html$Html$h1 = _VirtualDom_node('h1');
 var $elm$html$Html$img = _VirtualDom_node('img');
 var $elm$json$Json$Encode$string = _Json_wrap;
 var $elm$html$Html$Attributes$stringProperty = F2(
@@ -5196,18 +5195,18 @@ var $author$project$Home$picture = A2(
 	_List_fromArray(
 		[
 			$elm$html$Html$Attributes$src('images/me.png'),
-			A2($elm$html$Html$Attributes$style, 'width', '100%')
+			A2($elm$html$Html$Attributes$style, 'width', '100%'),
+			A2($elm$html$Html$Attributes$style, 'border-radius', '5px')
 		]),
 	_List_Nil);
-var $elm$virtual_dom$VirtualDom$text = _VirtualDom_text;
-var $elm$html$Html$text = $elm$virtual_dom$VirtualDom$text;
 var $author$project$Home$coolColumn = A2(
 	$elm$html$Html$div,
 	_List_fromArray(
 		[
 			A2($elm$html$Html$Attributes$style, 'display', 'inline-block'),
 			A2($elm$html$Html$Attributes$style, 'width', '50%'),
-			A2($elm$html$Html$Attributes$style, 'vertical-align', 'top')
+			A2($elm$html$Html$Attributes$style, 'vertical-align', 'top'),
+			A2($elm$html$Html$Attributes$style, 'padding-top', '90px')
 		]),
 	_List_fromArray(
 		[
@@ -5218,19 +5217,7 @@ var $author$project$Home$coolColumn = A2(
 					A2($elm$html$Html$Attributes$style, 'margin', '0 100px')
 				]),
 			_List_fromArray(
-				[
-					A2(
-					$elm$html$Html$h1,
-					_List_fromArray(
-						[
-							A2($elm$html$Html$Attributes$style, 'text-wrap', 'nowrap')
-						]),
-					_List_fromArray(
-						[
-							$elm$html$Html$text('Jonathan Reicher')
-						])),
-					$author$project$Home$picture
-				]))
+				[$author$project$Home$picture]))
 		]));
 var $elm$core$Basics$composeL = F3(
 	function (g, f, x) {
@@ -5252,6 +5239,8 @@ var $author$project$Links$myMastodon = 'https://www.mastodon.social/@yonatanreic
 var $elm$html$Html$Attributes$target = $elm$html$Html$Attributes$stringProperty('target');
 var $author$project$Home$openInNewTab = $elm$html$Html$Attributes$target('_blank');
 var $elm$html$Html$span = _VirtualDom_node('span');
+var $elm$virtual_dom$VirtualDom$text = _VirtualDom_text;
+var $elm$html$Html$text = $elm$virtual_dom$VirtualDom$text;
 var $author$project$Home$items = function () {
 	var bold = $elm$html$Html$span(
 		_List_fromArray(
@@ -5444,7 +5433,7 @@ var $author$project$Home$textColumn = A2(
 			_List_Nil,
 			_List_fromArray(
 				[
-					$elm$html$Html$text('\n            I am a researcher at the software engineering lab at The Technion.\n            I am looking into super-optimization, into theorem proving, and into\n            how humans use these tool.\n            ')
+					$elm$html$Html$text('\n            I am a researcher at the software engineering lab at The Technion.\n            I am looking into super-optimization, theorem proving, and into\n            how humans use these tools.\n            ')
 				]))
 		]));
 var $author$project$Home$mainContent = A2(
