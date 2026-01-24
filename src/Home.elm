@@ -95,13 +95,14 @@ textColumn =
         , style "padding-top" "70px"
         ]
         [ p [] [ text """
-            Hello! I'm Jonathan Reicher, or maybe Yonatan Reicher, and this is
-            my site. I make compilers, software and sometimes art.
+            Hello! I'm Jonathan Reicher. I make compilers, software and
+            sometimes art. Nice to have you here.
             """ ]
         , myBullets
         , p [] [ text """
-            Currently I currently working under Shachar Itzaki at The Technion
-            for my MSc in Computer Science on Lean 4 and the humans that use it.
+            I am a researcher at the software engineering lab at The Technion.
+            I am looking into super-optimization, into theorem proving, and into
+            how humans use these tool.
             """ ]
         -- , h2 [] [ text "teaching" ]
         -- , p []
