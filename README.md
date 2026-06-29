@@ -9,7 +9,7 @@ After cloning the repository, everything should already be set up. Just open up
 a local server and your ready to go. You probably have python installed, so you
 can just run:
 ```bash
-python -m http.server
+python3 -m http.server
 ```
 
 Now navigate to `localhost:8000` in your browser and you should see the site!
